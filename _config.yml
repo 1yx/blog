@@ -1,0 +1,24 @@
+# Basic
+name: "betsu"
+
+# URL
+baseurl: ""
+permalink: "/post/:year/:month/:day/:title/"
+
+collections:
+  cheatsheets:
+    output: true
+    permalink: "/cheatsheet/:path/"
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+  -
+    scope:
+      type: "cheatsheets"
+    values:
+      layout: "empty"

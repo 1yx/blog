@@ -1,0 +1,14 @@
+---
+title: Cheatsheet
+layout: default
+---
+<h1>Cheatsheet</h1>
+<ul>
+  {% for cs in site.cheatsheets %}
+  <li>
+    <h3>
+      <a href="{{ cs.url }}">{{ cs.title }}</a>
+    </h3>
+  </li>
+  {% endfor %}
+</ul>
